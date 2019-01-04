@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  **/
 @RestController
-@RequestMapping("/api/v1/ribbon")
+@RequestMapping("/api/v1/ribbons")
 public class RibbonController {
 
     @Autowired

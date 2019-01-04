@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  **/
 @RestController
-@RequestMapping("/api/v1/feign")
+@RequestMapping("/api/v1/feigns")
 public class FeignController {
 
     @Autowired

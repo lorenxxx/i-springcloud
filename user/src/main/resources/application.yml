@@ -1,9 +1,11 @@
 spring:
   application:
-    name: user
+    name: service-user
 
 server:
-  port: 8011
+  port: 8010
+  servlet:
+    contextPath: /user
 
 eureka:
   client:

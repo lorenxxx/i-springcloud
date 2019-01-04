@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @Date 2019/1/4 3:19 PM
  * @Version 1.0
  **/
-@FeignClient(value = "user", fallback = FeignServiceHystrix.class)
+@FeignClient(value = "service-user", fallback = FeignServiceHystrix.class)
 public interface IFeignService {
 
-    @RequestMapping(value = "/api/v1/users", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/api/v1/users", method = RequestMethod.GET)
     String doRequest();
 
 }

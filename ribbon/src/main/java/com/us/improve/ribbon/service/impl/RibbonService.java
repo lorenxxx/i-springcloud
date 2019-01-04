@@ -22,7 +22,7 @@ public class RibbonService implements IRibbonService {
     @Override
     @HystrixCommand(fallbackMethod = "doRequestError")
     public String doRequest() {
-        return restTemplate.getForObject("http://user/api/v1/users", String.class);
+        return restTemplate.getForObject("http://service-user/user/api/v1/users", String.class);
     }
 
     public String doRequestError() {
