@@ -1,5 +1,6 @@
 package com.us.improve.ribbon.service.impl;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.us.improve.ribbon.service.IRibbonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,8 +20,13 @@ public class RibbonService implements IRibbonService {
     private RestTemplate restTemplate;
 
     @Override
+    @HystrixCommand(fallbackMethod = "doRequestError")
     public String doRequest() {
         return restTemplate.getForObject("http://user/api/v1/users", String.class);
+    }
+
+    public String doRequestError() {
+        return "Sorry, error.";
     }
 
 }
