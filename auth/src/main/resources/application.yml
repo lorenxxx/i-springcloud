@@ -3,7 +3,7 @@ spring:
     name: auth
 
 server:
-  port: 8022
+  port: 8020
 
 eureka:
   client:
