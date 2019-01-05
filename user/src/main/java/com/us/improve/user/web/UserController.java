@@ -19,9 +19,15 @@ public class UserController {
     @Value("${server.port}")
     private String port;
 
+    @Value("${foo}")
+    private String foo;
+
+    @Value("${maxim}")
+    private String maxim;
+
     @GetMapping
     public String getUserById() {
-        return "Loren, " + port;
+        return foo + ", " + maxim + ": " + port;
     }
 
 }

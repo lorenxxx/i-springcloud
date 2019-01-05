@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-ribbon
+  cloud:
+      config:
+        label: master
+        profile: dev
+        uri: http://localhost:8060/config-center
+

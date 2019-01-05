@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: service-auth
+  cloud:
+      config:
+        label: master
+        profile: dev
+        uri: http://localhost:8060/config-center
