@@ -5,6 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+/**
+ * @ClassName UserApplication
+ * @Desciption User服务启动入口
+ * @Author loren
+ * @Date 2019/1/4 8:39 PM
+ * @Version 1.0
+ **/
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
