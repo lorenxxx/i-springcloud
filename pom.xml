@@ -24,7 +24,7 @@
         <module>config-center</module>
         <module>gateway</module>
         <module>user</module>
-        <module>auth</module>
+        <module>task</module>
     </modules>
 
     <properties>
