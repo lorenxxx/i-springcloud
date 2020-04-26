@@ -5,6 +5,6 @@ spring:
       config:
         label: master
         profile: dev
-        uri: http://localhost:8060/config-center
+        uri: http://localhost:8000/config-center
 
 
